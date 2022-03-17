@@ -3,4 +3,10 @@ body {
 	margin: auto;
 	font-family: Inconsolata, monospace;
 	font-size: 0.9em;
+	background-color: #282828;
+	color: #ffffff;
+}
+
+a {
+	color: #88ffff;
 }
