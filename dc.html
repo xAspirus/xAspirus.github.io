@@ -1,6 +1,32 @@
-<link rel="stylesheet" href="/css/common.css">
+<style>
 
-<strong>Usage: </strong> https://xaspirus.github.io/dc.html?id={discord invite link}
+* {
+	font-family: Consolas, monospace;
+	font-size: 24px;
+	text-align: center;
+}
+
+body {
+	background-color: #303033;
+	padding-top: 5em;
+}
+
+#a {
+	color: #b666eb;
+	font-weight: bold;
+}
+
+#b {
+	color: #fadb52;
+}
+
+</style>
+
+
+
+<span id="a">?id=</span><span id="b">{invite}</span>
+
+
 
 <script>
 
@@ -9,9 +35,8 @@ var url = new URL(url_string);
 var c = url.searchParams.get("id");
 
 if (c != null) {
+	document.getElementById('b').innerText = c;
 	window.location.replace(`http://www.discord.com/invite/${c}`);
 }
 
 </script>
-
-vscode vode vscode vosc deov code voce vode code vode vode vode vode
