@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="/css/theme.css">
+		<link rel="stylesheet" href="/css/main.css">
+		<style>
+			:root {
+				--bg: var(--base0);
+			}
+			
+			html, body {
+				background-color: var(--bg);
+				text-align: center;
+			}
+			
+			body {
+				padding-top: calc(50vh - 6em);
+			}
+			
+			#text {
+				color: var(--base0);
+				font-size: 4em;
+			}
+		</style>
+	</head>
+	<body>
+		<span	id="text">Cry</span>
+		<script>
+			let url = new URL(window.location.href);
+			let c = url.searchParams.get('text');
+			if (c != null) {
+				document.getElementById('text').innerText = c;
+			}
+			c = url.searchParams.get('color');
+			if (c != null) {
+				let root = document.querySelector(':root');
+				root.style.setProperty('--bg', `var(--base${c})`);
+			}
+		</script>
+	</body>
+</html>

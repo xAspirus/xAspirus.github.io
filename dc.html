@@ -1,42 +1,39 @@
-<style>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="/css/theme.css">
+		<link rel="stylesheet" href="/css/main.css">
+		<style>
+			body {
+				text-align: center;
+				padding-top: calc(50vh - 2.5em);
+				padding-bottom: calc(50vh - 2.5em);
+				font-size: 2em;
+				background-color: var(--base0);
+				max-width: 800px;
+				margin-left: auto;
+				margin-right: auto;
+			}
 
-* {
-	font-family: Consolas, monospace;
-	font-size: 24px;
-	text-align: center;
-}
+			#a {
+				color: var(--baseA);
+			}
 
-body {
-	background-color: #303033;
-	padding-top: 5em;
-}
-
-#a {
-	color: #b666eb;
-	font-weight: bold;
-}
-
-#b {
-	color: #fadb52;
-}
-
-</style>
-
-
-
-<span id="a">?id=</span><span id="b">{invite}</span>
-
-
-
-<script>
-
-var url_string = window.location.href;
-var url = new URL(url_string);
-var c = url.searchParams.get("id");
-
-if (c != null) {
-	document.getElementById('b').innerText = c;
-	window.location.replace(`http://www.discord.com/invite/${c}`);
-}
-
-</script>
+			#b {
+				color: var(--baseB);
+			}
+		</style>
+	</head>
+	<body>
+		<span id="a">../?id=</span><span id="b">your-discord-invite-code</span>
+		<script>
+			let url = new URL(window.location.href);
+			let c = url.searchParams.get("id");
+			if (c != null) {
+				document.getElementById('b').innerText = c;
+				window.location.replace(`http://www.discord.com/invite/${c}`);
+			}
+		</script>
+	</body>
+</html>

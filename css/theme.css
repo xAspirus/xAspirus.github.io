@@ -1,0 +1,41 @@
+@media (prefers-color-scheme: light) {
+	:root {
+		--base0: #ffffff;
+		--base1: #f5f5f5;
+		--base2: #c8c8fa;
+		--base3: #969896;
+		--base4: #e8e8e8;
+		--base5: #333333;
+		--base6: #ffffff;
+		--base7: #ffffff;
+		--base8: #ed6a43;
+		--base9: #0086b3;
+		--baseA: #795da3;
+		--baseB: #183691;
+		--baseC: #183691;
+		--baseD: #795da3;
+		--baseE: #a71d5d;
+		--baseF: #333333;
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--base0: #263238;
+		--base1: #2C393F;
+		--base2: #37474F;
+		--base3: #707880;
+		--base4: #C9CCD3;
+		--base5: #CDD3DE;
+		--base6: #D5DBE5;
+		--base7: #FFFFFF;
+		--base8: #EC5F67;
+		--base9: #EA9560;
+		--baseA: #FFCC00;
+		--baseB: #8BD649;
+		--baseC: #80CBC4;
+		--baseD: #89DDFF;
+		--baseE: #82AAFF;
+		--baseF: #EC5F67;
+	}
+}

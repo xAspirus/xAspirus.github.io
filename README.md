@@ -1,2 +1,1 @@
-# xAspirus.github.io
-My super cool website
+[xAspirus.github.io](https://xAspirus.github.io)
