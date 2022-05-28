@@ -12,8 +12,8 @@
 * {
 	transition: background-color 10s cubic-bezier(0, 0.55, 0.45, 1);
 	transition: color 10s cubic-bezier(0, 0.55, 0.45, 1);
-	color: var(--base5);
 	font-family: 'IBM Plex Mono';
+	color: var(--base5);
 }
 
 html {

@@ -1,0 +1,13 @@
+#content {
+	font-size: 1.66vw;
+	tab-size: 2;
+}
+
+body {
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	color: var(--baseA);
+}
