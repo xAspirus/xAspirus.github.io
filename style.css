@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap');
+
+:root {
+    --b0: #282828;
+    --b1: #3c3836;
+    --b2: #504945;
+    --b3: #665c54;
+    --b4: #bdae93;
+    --b5: #d5c4a1;
+    --b6: #ebdbb2;
+    --b7: #fbf1c7;
+    --b8: #fb4934;
+    --b9: #fe8019;
+    --bA: #fabd2f;
+    --bB: #b8bb26;
+    --bC: #8ec07c;
+    --bD: #83a598;
+    --bE: #d3869b;
+    --bF: #d65d0e;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1.2;
+    font-size: 14px;
+    font-family: Inconsolata;
+    font-weight: normal;
+    text-decoration: none;
+    color: var(--b5);
+    list-style-position: inside;
+}
+
+html {
+    background: var(--b0);
+}
+
+body {
+    width: 800px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+#content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+#sidebar {
+    margin-right: 16px;
+    padding-right: 16px;
+    /* border-right: 1px solid var(--b2); */
+}
+
+#markdown img {
+    width: 100%;
+}
+
+#markdown p,
+#markdown pre,
+#markdown>ol,
+#markdown>ul,
+#markdown>table {
+    margin-bottom: 16px;
+}
+
+#markdown h1,
+#markdown h2,
+#markdown h3,
+#markdown h4,
+#markdown h5,
+#markdown h6 {
+    color: var(--b9);
+    font-weight: bold;
+}
+
+#markdown h1::before {
+    content: "#";
+}
+
+#markdown h2::before {
+    content: "##";
+}
+
+#markdown h3::before {
+    content: "###";
+}
+
+#markdown h4::before {
+    content: "####";
+}
+
+#markdown h5::before {
+    content: "#####";
+}
+
+#markdown h6::before {
+    content: "######";
+}
+
+#markdown h1::before,
+#markdown h2::before,
+#markdown h3::before,
+#markdown h4::before,
+#markdown h5::before,
+#markdown h6::before {
+    margin-right: 4px;
+}
+
+#markdown hr {
+    border: none;
+    border-bottom: 1px solid var(--b1);
+    margin-bottom: 16px;
+}
+
+#markdown ul {
+    list-style: none;
+}
+
+#markdown ul>li::before {
+    content: "-";
+    margin-right: 8px;
+}
+
+#markdown ol,
+#markdown ul {
+    margin-left: 16px;
+}
+
+#markdown a {
+    color: var(--bD);
+}
+
+#markdown a:hover {
+    color: var(--b0);
+    background: var(--bD);
+}
+
+#markdown blockquote {
+    border-left: 4px solid var(--bB);
+    padding-left: 8px;
+}
+
+.hljs {
+    border: 1px solid var(--b1);
+}
+
+#markdown table {
+    border-collapse: collapse;
+}
+
+#markdown td,
+th {
+    border: 1px solid var(--b1);
+    padding: 4px;
+}
+
+#markdown th {
+    color: var(--bA);
+}
+
+#markdown strong {
+    font-weight: bold;
+}
+
+#markdown em {
+    font-style: italic;
+}
+
+#sidebar>h1 {
+    font-weight: bold;
+    text-align: right;
+}
