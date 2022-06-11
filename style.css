@@ -42,14 +42,13 @@ body {
 }
 
 #content {
+    width: 100%;
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 3fr;
 }
 
-#sidebar {
-    margin-right: 16px;
-    padding-right: 16px;
-    /* border-right: 1px solid var(--b2); */
+#sidebar, #markdown {
+    min-width: 0;
 }
 
 #markdown img {
@@ -127,11 +126,11 @@ body {
     margin-left: 16px;
 }
 
-#markdown a {
+a {
     color: var(--bD);
 }
 
-#markdown a:hover {
+a:hover {
     color: var(--b0);
     background: var(--bD);
 }
@@ -169,5 +168,25 @@ th {
 
 #sidebar>h1 {
     font-weight: bold;
-    text-align: right;
+    color: var(--bB);
+}
+
+#tree {
+    margin-top: 16px;
+}
+
+#tree ul {
+    list-style-type: none;
+}
+
+#tree ul ul {
+    margin-left: 16px;
+}
+
+#tree h5 {
+    font-weight: bold;
+}
+
+input[type="checkbox"] {
+    margin-right: 8px;
 }

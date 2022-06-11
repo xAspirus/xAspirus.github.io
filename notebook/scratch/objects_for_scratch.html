@@ -13,11 +13,23 @@
     <div id="content">
         <div id="sidebar">
             <h1>Aspirus</h1>
+            <div id="tree">
+                <ul>
+<li><a href="/notebook/test_page.html">test_page.md</a></li>
+<li><a href="/notebook/README.html">README.md</a></li>
+<li>
+<h5>scratch</h5>
+    <ul>
+    <li><a href="/notebook/scratch/objects_for_scratch.html">objects_for_scratch.md</a></li>
+    </ul>
+</li>
+</ul>
+
+            </div>
         </div>
-        <div id="markdown"><h1>Storing objects (as in Javascript) in Scratch</h1>
-<p>object is a data structure which stores key value pairs. It can store references to other objects allowing
-for representation of trees.</p>
-<h2>Data</h2>
+        <div id="markdown"><h2>Storing objects (as in Javascript) in Scratch</h2>
+<p>object is a data structure which stores key value pairs. It can store references to other objects allowing for representation of trees.</p>
+<h3>Data</h3>
 <p>Each node of data requires these properties</p>
 <pre><code>key:    Key
 type:   Data type of property, if is set to &quot;Refrence&quot; then value is a Reference to some object
@@ -25,20 +37,11 @@ value:  Value of property
 next:   Reference to next property in object
 </code></pre>
 <h3>Creating objects</h3>
-<p>Check if pool contains free node
-assign first property to free node
-set next to -1
-return reference to first property</p>
+<p>Check if pool contains free node assign first property to free node set next to -1 return reference to first property</p>
 <h3>Accessing object properties</h3>
-<p>Jump to first property
-if given key matches property key
---&gt;return [type,value]
-else:
---&gt;jump to next
-return [None,None]</p>
+<p>Jump to first property if given key matches property key --&gt;return [type,value] else: --&gt;jump to next return [None,None]</p>
 <h3>Deleting properties</h3>
-<p>set previous properties' next to -1
-add this reference to pool</p>
+<p>set previous properties' next to -1 add this reference to pool</p>
 <h3>Deleting objects</h3>
 <p>use deleting properties to delete all properties</p>
 </div>
